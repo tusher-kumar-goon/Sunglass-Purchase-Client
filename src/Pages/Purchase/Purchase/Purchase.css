@@ -1,0 +1,67 @@
+.input-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-style input{
+    display: block;
+    width: 350px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline-color: #dcc397;
+    border: 1px solid gray;
+}
+
+.input-style textarea{
+    width: 350px;
+    height: 100px;
+    margin:0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline-color: #dcc397;
+}
+.submit-btn{
+    background-color:  white;
+    color: #dcc397;
+    font-weight: 700;
+    width: 100px !important;
+    border: 1px solid white;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover{
+    background-color: #dcc397;
+    color: #ffffff;
+    
+}
+
+
+
+/* .details-card{
+    margin-left: 40px;
+    }
+    .confirm-booking input{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    
+    .corfirm-order{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+        margin-right: 80px;
+        margin-left: 50px;
+    }
+    
+    @media only screen and (max-width:688px) {
+        .corfirm-order{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    @media only screen and (min-width:689px) and (max-width: 991px){
+        .corfirm-order{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } */
