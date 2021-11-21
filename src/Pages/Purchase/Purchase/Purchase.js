@@ -20,7 +20,7 @@ const OrderPlaced = () => {
         data.status = 'pending';
         data.img = product.img
 
-        axios.post(`http://localhost:5000/orders`, data)
+        axios.post(`https://whispering-sierra-52339.herokuapp.com/orders`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Order Placed SuccessFully');
@@ -31,7 +31,7 @@ const OrderPlaced = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://whispering-sierra-52339.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data))
 

@@ -7,12 +7,12 @@ const MyOrders = () => {
     const [orders, setOrder] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://whispering-sierra-52339.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, []);
     const handleDelete = id => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://whispering-sierra-52339.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -88,14 +88,14 @@ export default MyOrders;
 //     const [controls, setControls] = useState(false)
 
 //     useEffect(() => {
-//         fetch('http://localhost:5000/orders')
+//         fetch('https://whispering-sierra-52339.herokuapp.com/orders')
 //             .then(res => res.json())
 //             .then(data => setOrder(data))
 //     }, [controls])
 
 
 //     const handleDelete = (_id) => {
-//         fetch(`http://localhost:5000/orders/${_id}`, {
+//         fetch(`https://whispering-sierra-52339.herokuapp.com/orders/${_id}`, {
 //             method: "DELETE",
 //             headers: { "content-type": "application/json" },
 

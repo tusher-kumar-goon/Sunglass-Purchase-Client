@@ -28,7 +28,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 className="banner-text">Buy Best Sunglass </h3>
+                        <h3 className="banner-text">Buy Best Sunglass Here </h3>
 
                     </Carousel.Caption>
                 </Carousel.Item>

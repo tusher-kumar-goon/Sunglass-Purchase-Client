@@ -7,7 +7,7 @@ const Review = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://whispering-sierra-52339.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
@@ -60,7 +60,7 @@ export default Review;
 
 //     const [reviews, setReviews] = useState([])
 //     useEffect(() => {
-//         fetch('http://localhost:5000/reviews')
+//         fetch('https://whispering-sierra-52339.herokuapp.com/reviews')
 //             .then(res => res.json())
 //             .then(data => setReviews(data))
 //     }, [])

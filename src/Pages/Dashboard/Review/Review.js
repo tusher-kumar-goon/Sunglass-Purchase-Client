@@ -10,7 +10,7 @@ const Reviews = () => {
         console.log(data);
 
         // use Axious
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://whispering-sierra-52339.herokuapp.com/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully data');

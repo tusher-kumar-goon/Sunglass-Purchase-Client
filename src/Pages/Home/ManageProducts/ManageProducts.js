@@ -4,13 +4,13 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/AllProducts')
+        fetch('https://whispering-sierra-52339.herokuapp.com/AllProducts')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://whispering-sierra-52339.herokuapp.com/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })

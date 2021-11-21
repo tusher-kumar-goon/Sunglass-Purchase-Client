@@ -10,7 +10,7 @@ const AddProduct = () => {
         console.log(data);
 
         // use Axious
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://whispering-sierra-52339.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully data');
